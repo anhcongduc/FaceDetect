@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 detector = dlib.get_frontal_face_detector()
 face_model = get_face_detector()
 landmark_model = get_landmark_model()
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
 model = load_model("models/lenet_smiles.hdf5")
 
 left_eye_landmarks  = [36, 37, 38, 39, 40, 41]
